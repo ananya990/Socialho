@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="create_styles.css">
+    <title>Upload Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <div class="text">Choose a pic/vid you want to upload</div>
+                <div class="buttons">
+                    <button id="uploadBtn" onclick="chooseFile()">Choose</button>
+                    <input type="file" name="myfile" id="myfile" style="display: none;" onchange="displayFileName()" />
+                    <form action="./result.html" id="postForm" method="post">
+                        <button type="button" id="postBtn" onclick="submitForm()">Post</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box" id="fileDisplay"></div>
+        </div>
+    </div>
+    <script src="create_post.js"></script>
+</body>
+</html>

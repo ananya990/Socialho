@@ -1,0 +1,91 @@
+:root{
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+    --color-white: hsl(252, 30%, 100%);
+    --color-gray: hsl(252, 15%, 65%);
+    --color-light:hsl(252, 30%, 90%);
+    --color-dark: hsl(252, 30%, 17%);
+    --color-primary: hsl(252, 75%, 60%);
+    --color-success: hsl(120, 95%, 60%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-black: hsl(252, 30%, 10%);
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+    }
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(images/bg.jpg);
+    background-color: var(--color-light); /* Fallback background color */
+}
+
+.container {
+    width: 400%;
+    max-width: 1000px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.buttons button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+#uploadBtn {
+    order: -1; /* Move the "Choose" button to the left */
+    margin-right: 10px; /* Push "Post" button to the right */
+}
+
+#postBtn {
+    order: 1; /* Move the "Post" button to the right */
+    margin-left: 10px; /* Push "Choose" button to the left */
+}
+
+
+#myfile {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.box {
+    width: 100%;
+    height: 400px;
+    background-color: #ddd; /* Placeholder background color for the box */
+    border: 1px solid #ccc;
+}

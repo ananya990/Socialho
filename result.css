@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000000;
+    color: white;
+}
+
+#successContainer {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-container {
+    text-align: center;
+}
+
+.center-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.success-message {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.button-back-to-dashboard {
+    background-color: hsl(252, 75%, 60%);;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; 
+}
